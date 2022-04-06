@@ -6,8 +6,8 @@
 <http://protege.stanford.edu/thesauri/aero> a skos:ConceptScheme;
   dct:description "A simple thesaurus that describes terms to talk about commercial airliners"@en;
   dct:title "AERO Thesaurus"@en;
-  skos:hasTopConcept aero:A300, aero:A310, aero:A320-100, aero:A320-200, aero:A330,
-    aero:A340, aero:A350, aero:A380 .
+  skos:hasTopConcept aero:A300, aero:A310, aero:A320, aero:A330, aero:A340, aero:A350,
+    aero:A380 .
 
 aero:A300 a skos:Concept;
   skos:altLabel "Airbus A300"@en;
@@ -23,24 +23,23 @@ aero:A310 a skos:Concept;
 
 aero:A320 a skos:Concept;
   skos:altLabel "Airbus A320"@en;
-  skos:broader aero:A320-100, aero:A320-200;
   skos:definition "A320 Family Aircraft. An A320 is a narrow body twin jet aircraft that is manufactured by Airbus"@en;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
-  skos:prefLabel "A320"@en .
+  skos:narrower aero:A320-100, aero:A320-200;
+  skos:prefLabel "A320"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
 aero:A320-100 a skos:Concept;
   skos:altLabel "Airbus A320-100"@en;
+  skos:broader aero:A320;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
-  skos:narrower aero:A320;
-  skos:prefLabel "A320-100"@en;
-  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
+  skos:prefLabel "A320-100"@en .
 
 aero:A320-200 a skos:Concept;
   skos:altLabel "Airbus A320-200"@en;
+  skos:broader aero:A320;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
-  skos:narrower aero:A320;
-  skos:prefLabel "A320-200"@en;
-  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
+  skos:prefLabel "A320-200"@en .
 
 aero:A330 a skos:Concept;
   skos:altLabel "Airbus A330"@en;
