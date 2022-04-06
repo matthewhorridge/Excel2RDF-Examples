@@ -1,64 +1,66 @@
+@prefix aero: <http://protege.stanford.edu/thesauri/aero/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix pav: <http://purl.org/pav/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix temp-vocab: <http://www.fairdatacollective.com/template-vocabulary/> .
 
-<http://www.fairdatacollective.com/template-vocabulary/> a skos:ConceptScheme;
-  dct:contributor <https://orcid.org/0000-0001-6875-5360>;
-  dct:creator <https://orcid.org/0000-0002-9381-9694>;
-  dct:description "This is a template for building a SKOS-based controlled vocabulary. It is used as base of the worflow described in excel2rdf.readthedocs.io/"@en;
-  dct:title "Template for building SKOS based controlled vocabulary"@en;
-  pav:createdOn "2020-10-22T22:00:00+01:00"@en;
-  pav:lastUpdatedOn "2021-02-21T16:32:00-08:00"@en;
-  pav:version "0.1.2"@en;
-  skos:hasTopConcept temp-vocab:TopConceptOne, temp-vocab:TopConceptTwo;
-  skos:prefLabel "Template for building SKOS based controlled vocabulary"@en .
+<http://protege.stanford.edu/thesauri/aero> a skos:ConceptScheme;
+  dct:description "A simple thesaurus that describes terms to talk about commercial airliners"@en;
+  dct:title "AERO Thesaurus"@en;
+  skos:hasTopConcept aero:A300, aero:A310, aero:A320-100, aero:A320-200, aero:A330,
+    aero:A340, aero:A350, aero:A380 .
 
-temp-vocab:TopConceptOne a skos:Concept;
-  dct:contributor <https://orcid.org/0000-0001-6875-5360>;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:definition "This is a top concept which is used to collect a number of narrower concepts."@en;
-  skos:inScheme <http://www.fairdatacollective.com/template-vocabulary/>;
-  skos:narrower temp-vocab:NarrowConceptOne, temp-vocab:NarrowConceptTwo;
-  skos:prefLabel "Top Concept One"@en;
-  skos:topConceptOf <http://www.fairdatacollective.com/template-vocabulary/> .
+aero:A300 a skos:Concept;
+  skos:altLabel "Airbus A300"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A300"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
-temp-vocab:NarrowConceptOne a skos:Concept;
-  dct:creator <https://orcid.org/0000-0001-6875-5360>;
-  skos:broader temp-vocab:TopConceptOne;
-  skos:definition "A definition of NarrowConceptOne, which has a broader concept TopConceptOne."@en;
-  skos:inScheme <http://www.fairdatacollective.com/template-vocabulary/>;
-  skos:prefLabel "Narrow Concept One"@en .
+aero:A310 a skos:Concept;
+  skos:altLabel "Airbus A310"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A310"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
-temp-vocab:NarrowConceptTwo a skos:Concept;
-  dct:creator <https://orcid.org/0000-0001-6875-5360>;
-  skos:broader temp-vocab:TopConceptOne;
-  skos:definition "A definition of NarrowConceptTwo, which has a broader concept TopConceptOne."@en;
-  skos:inScheme <http://www.fairdatacollective.com/template-vocabulary/>;
-  skos:prefLabel "Narrow Concept Two"@en .
+aero:A320 a skos:Concept;
+  skos:altLabel "Airbus A320"@en;
+  skos:broader aero:A320-100, aero:A320-200;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A320"@en .
 
-temp-vocab:TopConceptTwo a skos:Concept;
-  dct:contributor <https://orcid.org/0000-0001-6875-5360>;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:definition "This is yet another top concept which is used to collect a number of narrower concepts."@en;
-  skos:inScheme <http://www.fairdatacollective.com/template-vocabulary/>;
-  skos:narrower temp-vocab:NarrowConceptFour, temp-vocab:NarrowConceptThree;
-  skos:prefLabel "Top Concept Two"@en;
-  skos:topConceptOf <http://www.fairdatacollective.com/template-vocabulary/> .
+aero:A320-100 a skos:Concept;
+  skos:altLabel "Airbus A320-100"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:narrower aero:A320;
+  skos:prefLabel "A320-100"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
-temp-vocab:NarrowConceptThree a skos:Concept;
-  dct:contributor <https://orcid.org/0000-0001-6875-5360>;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:broader temp-vocab:TopConceptTwo;
-  skos:definition "A definition of NarrowConceptThree, which has a broader concept TopConceptTwo."@en;
-  skos:inScheme <http://www.fairdatacollective.com/template-vocabulary/>;
-  skos:prefLabel "Narrow Concept Three"@en .
+aero:A320-200 a skos:Concept;
+  skos:altLabel "Airbus A320-200"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:narrower aero:A320;
+  skos:prefLabel "A320-200"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
-temp-vocab:NarrowConceptFour a skos:Concept;
-  dct:contributor <https://orcid.org/0000-0001-6875-5360>;
-  dct:creator <https://orcid.org/0000-0002-9381-9693>;
-  skos:broader temp-vocab:TopConceptTwo;
-  skos:definition "A definition of NarrowConceptFour, which has a broader concept TopConceptTwo."@en;
-  skos:inScheme <http://www.fairdatacollective.com/template-vocabulary/>;
-  skos:prefLabel "Narrow Concept Four"@en .
+aero:A330 a skos:Concept;
+  skos:altLabel "Airbus A330"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A330"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
+
+aero:A340 a skos:Concept;
+  skos:altLabel "Airbus A340"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A340"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
+
+aero:A350 a skos:Concept;
+  skos:altLabel "Airbus A350"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A350"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
+
+aero:A380 a skos:Concept;
+  skos:altLabel "Airbus A380"@en;
+  skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
+  skos:prefLabel "A380"@en;
+  skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
