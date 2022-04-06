@@ -44,24 +44,28 @@ aero:A320-200 a skos:Concept;
 
 aero:A330 a skos:Concept;
   skos:altLabel "Airbus A330"@en;
+  skos:definition "A Wide Body Jet Aircraft manufactured by Airbus"@en;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
   skos:prefLabel "A330"@en;
   skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
 aero:A340 a skos:Concept;
   skos:altLabel "Airbus A340"@en;
+  skos:definition "A Wide Body Jet Aircraft manufactured by Airbus"@en;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
   skos:prefLabel "A340"@en;
   skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
 aero:A350 a skos:Concept;
   skos:altLabel "Airbus A350"@en;
+  skos:definition "A Wide Body Jet Aircraft manufactured by Airbus"@en;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
   skos:prefLabel "A350"@en;
   skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
 
 aero:A380 a skos:Concept;
   skos:altLabel "Airbus A380"@en;
+  skos:definition "A Wide Body Jet Aircraft manufactured by Airbus"@en;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
   skos:prefLabel "A380"@en;
   skos:topConceptOf <http://protege.stanford.edu/thesauri/aero> .
