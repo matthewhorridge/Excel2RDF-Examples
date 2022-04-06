@@ -35,4 +35,4 @@ jobs:
           rm qSKOS.jar
           rm xls2rdf.jar
           git add .
-          git diff-index --quiet HEAD || git commit -m "generated new .ttl from .xlsx file"
+          git commit -m "generated new .ttl from .xlsx file"
