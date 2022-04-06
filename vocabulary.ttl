@@ -24,6 +24,7 @@ aero:A310 a skos:Concept;
 aero:A320 a skos:Concept;
   skos:altLabel "Airbus A320"@en;
   skos:broader aero:A320-100, aero:A320-200;
+  skos:definition "A320 Family Aircraft. An A320 is a narrow body twin jet aircraft that is manufactured by Airbus"@en;
   skos:inScheme <http://protege.stanford.edu/thesauri/aero>;
   skos:prefLabel "A320"@en .
 
