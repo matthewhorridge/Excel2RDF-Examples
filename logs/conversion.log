@@ -1,25 +1,27 @@
-19:09:44.347  279  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use output format : text/turtle
-19:09:44.350  282  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use ModelWriter : fr.sparna.rdf.xls2rdf.OutputStreamModelWriter
-19:09:44.834  766  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Processing sheet: Sheet1
-19:09:44.841  773  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://protege.stanford.edu/thesauri/aero/
-19:09:44.843  775  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#prefLabel
-19:09:44.843  775  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#altLabel
-19:09:44.843  775  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#narrower
-19:09:44.844  776  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found at least 2 headers with proper property declaration in the first 10 columns, title row is at index 6
-19:09:44.844  776  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Found title row at index 6
-19:09:44.846  778  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "AERO Thesaurus" with lang en
-19:09:44.848  780  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "A simple thesaurus that describes terms to talk about commercial airliners" with lang en
-19:09:44.849  781  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Converting data with these column headers: 
-19:09:44.849  781  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=URI, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=URI, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=URI]
-19:09:44.850  782  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:prefLabel, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#prefLabel, declaredProperty=skos:prefLabel, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:prefLabel]
-19:09:44.850  782  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:altLabel, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#altLabel, declaredProperty=skos:altLabel, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:altLabel]
-19:09:44.850  782  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:narrower, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#narrower, declaredProperty=skos:narrower, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:narrower]
-19:09:44.851  783  INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Converting rows...
-19:09:44.860  792  INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Applying SKOS post-processings on the result
-19:09:44.861  793  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Postprocessing : SkosPostProcessor
-19:09:44.863  795  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Considering main resource like a ConceptScheme.
-19:09:44.865  797  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding inverse skos:broader and skos:narrower
-19:09:44.869  801  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:inScheme
-19:09:44.871  803  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Setting rdf:type skos:ConceptScheme to main resource
-19:09:44.871  803  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:hasTopConcept / skos:topConceptOf
-19:09:44.873  805  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Saving graph of 59 statements generated from Sheet Sheet1
+19:31:22.354  282  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use output format : text/turtle
+19:31:22.359  287  DEBUG fr.sparna.rdf.xls2rdf.app.Convert - Will use ModelWriter : fr.sparna.rdf.xls2rdf.OutputStreamModelWriter
+19:31:22.814  742  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Processing sheet: Sheet1
+19:31:22.822  750  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://protege.stanford.edu/thesauri/aero/
+19:31:22.823  751  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#prefLabel
+19:31:22.824  752  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#altLabel
+19:31:22.825  753  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#narrower
+19:31:22.825  753  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found proper property in header : http://www.w3.org/2004/02/skos/core#definition
+19:31:22.825  753  INFO  f.sparna.rdf.xls2rdf.RdfizableSheet - Found at least 2 headers with proper property declaration in the first 10 columns, title row is at index 6
+19:31:22.826  754  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Found title row at index 6
+19:31:22.828  756  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "AERO Thesaurus" with lang en
+19:31:22.830  758  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Adding value on header object "A simple thesaurus that describes terms to talk about commercial airliners" with lang en
+19:31:22.831  759  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Converting data with these column headers: 
+19:31:22.831  759  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=URI, language=Optional.empty, datatype=Optional.empty, property=null, declaredProperty=URI, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=URI]
+19:31:22.832  760  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:prefLabel, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#prefLabel, declaredProperty=skos:prefLabel, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:prefLabel]
+19:31:22.832  760  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:altLabel, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#altLabel, declaredProperty=skos:altLabel, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:altLabel]
+19:31:22.832  760  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:narrower, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#narrower, declaredProperty=skos:narrower, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:narrower]
+19:31:22.833  761  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - ColumnHeader [originalValue=skos:definition, language=Optional.empty, datatype=Optional.empty, property=http://www.w3.org/2004/02/skos/core#definition, declaredProperty=skos:definition, inverse=false, parameters={}, id=null, reconcileOn=null, headerCell=skos:definition]
+19:31:22.833  761  INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Converting rows...
+19:31:22.842  770  INFO  f.s.rdf.xls2rdf.Xls2RdfConverter - Applying SKOS post-processings on the result
+19:31:22.843  771  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Postprocessing : SkosPostProcessor
+19:31:22.844  772  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Considering main resource like a ConceptScheme.
+19:31:22.846  774  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding inverse skos:broader and skos:narrower
+19:31:22.848  776  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:inScheme
+19:31:22.849  777  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Setting rdf:type skos:ConceptScheme to main resource
+19:31:22.850  778  DEBUG f.s.rdf.xls2rdf.SkosPostProcessor - Adding skos:hasTopConcept / skos:topConceptOf
+19:31:22.852  780  DEBUG f.s.rdf.xls2rdf.Xls2RdfConverter - Saving graph of 60 statements generated from Sheet Sheet1
