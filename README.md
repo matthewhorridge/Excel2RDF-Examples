@@ -1,2 +1,2 @@
-# Excel2SKOS-Examples
-An example of creating SKOS vocabularies from Excel Workbooks
+# Excel2RFSExamples
+An example of creating RDF Graphs from Excel Workbooks
